@@ -1,16 +1,90 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.login-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradientBG {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.globalStyle {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  color: white;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.text-size {
+  font-size: 4rem;
+}
+
+.btn {
+  padding: 25px 40px;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+
+  outline: none;
+  border: none;
+
+  background: #4566ff;
+  color: #fff;
+  font-weight: 600;
+
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+}
+
+.btn-2 {
+  padding: 15px 30px;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+
+  outline: none;
+  margin-top: 20px;
+  border: none;
+
+  background: #4566ff;
+  color: #fff;
+  font-weight: 600;
+
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+}
+
+.userText {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.userText span {
+  color: #6a84f8;
+  font-weight: 600;
 }
